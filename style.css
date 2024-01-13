@@ -1,7 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+}
+
+/** STyle Related  */
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --dark: #131313;
+    --secondary-dark: #424242;
+    --primary-color: #FF900E;
+    --secondary-color: #727272;
+}
+::selection{
+    color: var(--primary-color);
+    background-color: var(--secondary-dark);
+}
+.btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 2.5rem;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.head {
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/** Header related */
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+}
+
+.sub_header {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+ul {
+    display: flex;
+    gap: 5.0rem;
+}
+
+ul li {
+    list-style-type: none;
+    color: var(--secondary-dark);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.header_content {
+    padding-top: 115px;
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header_content h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.header_content p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+.header_content button {
+    max-width: 190px;
+    margin-top: 20px;
+}
+
+.header_content img{
+    width: 143%;
+    margin-top: 25px;
+    border-radius: 10px;
 }
